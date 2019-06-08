@@ -1,0 +1,157 @@
+body {
+    margin:0;
+}
+* {
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Jura', sans-serif;
+}
+.scene {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-height: 100vh;
+}
+.layer {
+    position: absolute;
+    left: -10%;
+    top: -10%;
+    width: 110%;
+    height: 110%;
+}
+.layer-bg{
+    background: url(images/fire.jpg) center no-repeat;
+    background-size: cover;
+}
+.layer-1{
+    background: url(images/MK_characters.png) center no-repeat;
+    background-size: cover;
+    }
+.layer-2{
+    background: url(images/shield.png) center no-repeat;
+    background-size: cover;
+    top: -25%;
+    left: -8%;
+}
+.auth-body{
+    position: absolute;
+    width: 108%;
+    height: 110%;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -ms-flex-direction: column;
+    display: -ms-flexbox;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+
+.auth-form{
+    margin-left: -25px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -ms-flexbox;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+.auth-body__input::-webkit-input-placeholder { color: red; }
+.auth-body__input::-moz-placeholder { color: red; }
+.auth-body__input:focus{ outline:rgb(215,122,55) solid 1px } 
+.auth-body__input{
+    margin: 10px;
+    height: 30px;
+    background: black;
+    color: white;
+    border: none;
+    padding-left: 10px;  
+}
+.auth-body__wrapper-for-buttons{
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.auth-body__btn:hover { border: rgb(215,122,55) solid 1px; }
+.auth-body__btn {
+    background: black;
+    border: none;
+    color: white;
+}
+.auth-body__btn-registration{
+    margin: 10px;
+    height: 30px;
+    width: 50%;
+}
+.auth-body__btn-login{
+    margin: 10px;
+    height: 30px;
+    width: 50%;
+}
+.auth-game-name {
+    margin-left: -20px;
+    background: black ;
+    border:rgb(215,122,55) solid 1px;
+    border-radius: 50%;
+    width:200px;
+    height: 200px;
+    -webkit-animation: nameColor 2s infinite alternate;
+            animation: nameColor 2s infinite alternate;
+}
+.game-name{
+    margin: 0px;
+    font-size: 50px;
+    -webkit-animation: nameColor 2s infinite alternate;
+            animation: nameColor 2s infinite alternate;
+    padding-left: 35px;
+    padding-top: 35px;
+}
+@-webkit-keyframes nameColor {
+    0% {
+        border-color: rgb(244,195,58);
+        color: rgb(244,195,58);
+    }
+    50% {
+        border-color: rgb(250,144,53);
+        color: rgb(250,144,53);
+    }
+    100% {
+        border-color: rgb(115,190,246);
+        color: rgb(115,190,246);
+    }
+  }
+@keyframes nameColor {
+    0% {
+        border-color: rgb(244,195,58);
+        color: rgb(244,195,58);
+    }
+    50% {
+        border-color: rgb(250,144,53);
+        color: rgb(250,144,53);
+    }
+    100% {
+        border-color: rgb(115,190,246);
+        color: rgb(115,190,246);
+    }
+  }
